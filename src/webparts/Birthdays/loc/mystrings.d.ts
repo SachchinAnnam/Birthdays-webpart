@@ -1,11 +1,11 @@
-declare interface IHappyBirdthayWebPartStrings {
+declare interface IBirthdayWebPartStrings {
   PropertyPaneDescription: string;
   BasicGroupName: string;
   DescriptionFieldLabel: string;
   NumberUpComingDaysLabel: string;
 }
 
-declare module 'HappyBirdthayWebPartStrings' {
-  const strings: IHappyBirdthayWebPartStrings;
+declare module 'BirthdaysWebPartStrings' {
+  const strings: IBirthdayWebPartStrings;
   export = strings;
 }

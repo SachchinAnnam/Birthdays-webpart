@@ -14,12 +14,12 @@ import Birdthays from './components/Birthdays';
 import { IBirthdaysProps } from './components/IBirthdaysProps';
 import { MSGraphClient } from '@microsoft/sp-http';
 
-export interface IBirdthaysWebPartProps {
+export interface IBirthdaysWebPartProps {
   title: string;
   numberUpcomingDays: number;
 }
 
-export default class BirdthaysWebPart extends BaseClientSideWebPart<IBirdthaysWebPartProps> {
+export default class BirthdaysWebPart extends BaseClientSideWebPart<IBirthdaysWebPartProps> {
   private graphCLient: MSGraphClient;
 
   public onInit(): Promise<void> {

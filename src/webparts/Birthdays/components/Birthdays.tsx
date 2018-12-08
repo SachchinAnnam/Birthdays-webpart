@@ -62,7 +62,7 @@ export default class Birthdays extends React.Component<IBirthdaysProps, IBirthda
 
   // Sort Array of Birthdays
   private SortBirthdays(users: IUser[]) {
-    return users.sort(function (a, b) {
+    return users.sort( (a, b) => {
       if (a.birthday > b.birthday) {
         return 1;
       }
@@ -80,20 +80,20 @@ export default class Birthdays extends React.Component<IBirthdaysProps, IBirthda
       _otherMonthsBirthdays = [];
       _dezemberBirthdays = [];
       for (const item of listItems) {
-        this._users.push({ key: item.email, userName: item.Title, userEmail: item.email, jobDescription: item.JobTitle, birthday: item.Birthday });
+        this._users.push({ key: item.fields.email, userName: item.fields.Title, userEmail: item.fields.email, jobDescription: item.fields.JobTitle, birthday: item.fields.Birthday });
       }
       // Sort Items by Birthday MSGraph List Items API don't support ODATA orderBy
       // for end of year teste and sorting
       //  first select all bithdays of Dezember to sort this must be the first to show
       if (moment().format('MM') === '12') {
-        _dezemberBirthdays = this._users.filter(function (v) {
+        _dezemberBirthdays = this._users.filter( (v) => {
           var _currentMonth = moment(v.birthday, ["MM-DD-YYYY", "YYYY-MM-DD", "DD/MM/YYYY", "MM/DD/YYYY"]).format('MM');
           return (_currentMonth === '12');
         });
         // Sort by birthday date in Dezember month
         _dezemberBirthdays = this.SortBirthdays(_dezemberBirthdays);
         // select birthdays != of month 12
-        _otherMonthsBirthdays = this._users.filter(function (v) {
+        _otherMonthsBirthdays = this._users.filter((v) => {
           var _currentMonth = moment(v.birthday, ["MM-DD-YYYY", "YYYY-MM-DD", "DD/MM/YYYY", "MM/DD/YYYY"]).format('MM');
           return (_currentMonth !== '12');
         });

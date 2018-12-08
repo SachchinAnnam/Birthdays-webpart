@@ -4,7 +4,7 @@ import { IHappyBirthdayProps } from './IHappyBirthdayProps';
 import { IHappbirthdayState } from './IHappybirthdayState';
 import { escape } from '@microsoft/sp-lodash-subset';
 import { IUser } from './IUser';
-import HappyBirdthayCard from '../../controls/happyBirdthayCard/HappyBirthdayCard';
+import HappyBirdthayCard from '../../controls/happyBirthdayCard/HappyBirthdayCard';
 import * as moment from 'moment';
 import { Image, IImageProps, ImageFit } from 'office-ui-fabric-react/lib/Image';
 import { Label } from 'office-ui-fabric-react/lib/Label';

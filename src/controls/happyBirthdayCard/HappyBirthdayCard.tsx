@@ -16,7 +16,7 @@ const img: string = require('../../../assets/baloons.png');
 const IMG_WIDTH: number = 200;
 const IMG_HEIGTH: number = 190;
 
-export class HappyBirdthayCard extends React.Component<IHappyBirthdayCardProps, IHappyBirthdayCardPState> {
+export class HappyBirthdayCard extends React.Component<IHappyBirthdayCardProps, IHappyBirthdayCardPState> {
   private _Persona: IPersonaSharedProps;
   private _birthdayMsg: string = '';
 
@@ -123,4 +123,4 @@ export class HappyBirdthayCard extends React.Component<IHappyBirthdayCardProps, 
     );
   }
 }
-export default HappyBirdthayCard;
+export default HappyBirthdayCard;
