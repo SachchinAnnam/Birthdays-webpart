@@ -17,7 +17,7 @@
     "groupId": "5c03119e-3074-46fd-976b-c60198311f70",
     "group": { "default": "Other" },
     "title": { "default": "Birthdays Web Part" },
-    "description": { "default": "Birthday Web Part" },
+    "description": { "default": "Birthdays Web Part" },
     "officeFabricIconFontName": "Page",
     "properties": {
       "title": "Birthdays",
