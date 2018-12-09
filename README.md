@@ -1,4 +1,4 @@
-## happy-birdthay
+## Birdthays Web Part
 
 This is where you include your WebPart documentation.
 
