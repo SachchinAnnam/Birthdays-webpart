@@ -1,4 +1,4 @@
-## Birdthays Web Part
+## Birthdays Web Part
 
 This is where you include your WebPart documentation.
 
